@@ -19,7 +19,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -64,6 +64,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ApplicationClass.h" />
+    <ClInclude Include="ApplicationState.h" />
+    <ClInclude Include="GraphicsClass.h" />
+    <ClInclude Include="GraphicsObject.h" />
+    <ClInclude Include="InputClass.h" />
+    <ClInclude Include="MainMenuState.h" />
+    <ClInclude Include="MenuState.h" />
+    <ClInclude Include="NullState.h" />
+    <ClInclude Include="ResourceCreator.h" />
+    <ClInclude Include="SystemClass.h" />
+    <ClInclude Include="TimerClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationClass.cpp" />
+    <ClCompile Include="ApplicationState.cpp" />
+    <ClCompile Include="GraphicsClass.cpp" />
+    <ClCompile Include="GraphicsObject.cpp" />
+    <ClCompile Include="InputClass.cpp" />
+    <ClCompile Include="MainMenuState.cpp" />
+    <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="NullState.cpp" />
+    <ClCompile Include="ResourceCreator.cpp" />
+    <ClCompile Include="SystemClass.cpp" />
+    <ClCompile Include="TimerClass.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

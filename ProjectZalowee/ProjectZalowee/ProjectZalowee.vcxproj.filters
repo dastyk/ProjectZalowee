@@ -13,5 +13,111 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\HelpClasses">
+      <UniqueIdentifier>{df3aff2a-94a7-4e3c-b4f6-c7c7cc364d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ControlClasses">
+      <UniqueIdentifier>{be1f9cfa-bf45-4a76-838b-60b388aca4d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HelpClasses">
+      <UniqueIdentifier>{510a0ce7-e39f-40f6-b53a-5b6e521352a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ControlClasses">
+      <UniqueIdentifier>{15da06b9-2575-4501-9163-84d0e6417b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsClasses">
+      <UniqueIdentifier>{e444703a-be38-466d-ad21-93987886a9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsClasses">
+      <UniqueIdentifier>{e5f4536e-2f32-4946-a700-2d29197d37ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ApplicationStates">
+      <UniqueIdentifier>{2f28760e-5e4f-47f6-a5a1-4c5346926aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ApplicationStates">
+      <UniqueIdentifier>{f6ea9451-8c86-4126-a65a-1a9cdf224206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ApplicationStates\MenuStates">
+      <UniqueIdentifier>{c60b1847-2601-4b75-aed4-e8029883b065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ApplicationStates\MenuStates">
+      <UniqueIdentifier>{b200dfce-fd58-4cca-a6ad-c4985e60579e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsObjects">
+      <UniqueIdentifier>{07ca0c47-7022-423e-b6dc-02551a1d70fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsObjects">
+      <UniqueIdentifier>{0b7d2299-2236-4cdd-ab9d-6b81129aa6ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TimerClass.h">
+      <Filter>Header Files\HelpClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationClass.h">
+      <Filter>Header Files\ControlClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemClass.h">
+      <Filter>Header Files\ControlClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsClass.h">
+      <Filter>Header Files\GraphicsClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCreator.h">
+      <Filter>Header Files\HelpClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="InputClass.h">
+      <Filter>Header Files\ControlClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationState.h">
+      <Filter>Header Files\ApplicationStates</Filter>
+    </ClInclude>
+    <ClInclude Include="NullState.h">
+      <Filter>Header Files\ApplicationStates</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuState.h">
+      <Filter>Header Files\ApplicationStates\MenuStates</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuState.h">
+      <Filter>Header Files\ApplicationStates\MenuStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject.h">
+      <Filter>Header Files\GraphicsObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TimerClass.cpp">
+      <Filter>Source Files\HelpClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationClass.cpp">
+      <Filter>Source Files\ControlClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemClass.cpp">
+      <Filter>Source Files\ControlClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsClass.cpp">
+      <Filter>Source Files\GraphicsClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCreator.cpp">
+      <Filter>Source Files\HelpClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="InputClass.cpp">
+      <Filter>Source Files\ControlClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationState.cpp">
+      <Filter>Source Files\ApplicationStates</Filter>
+    </ClCompile>
+    <ClCompile Include="NullState.cpp">
+      <Filter>Source Files\ApplicationStates</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuState.cpp">
+      <Filter>Source Files\ApplicationStates\MenuStates</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>Source Files\ApplicationStates\MenuStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject.cpp">
+      <Filter>Source Files\GraphicsObjects</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
