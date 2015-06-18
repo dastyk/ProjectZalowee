@@ -71,7 +71,7 @@ int ApplicationClass::InitializeWindows()
 	wc.hCursor = LoadCursor(NULL, IDC_ARROW);
 	wc.hbrBackground = (HBRUSH)GetStockObject(BLACK_BRUSH);
 	wc.lpszMenuName = NULL;
-	wc.lpszClassName = mWNDCaption;
+	wc.lpszClassName = mWNDCaption.c_str();
 	wc.cbSize = sizeof(WNDCLASSEX);
 
 	// Register the window class.
@@ -114,8 +114,8 @@ int ApplicationClass::InitializeWindows()
 	// Create the window with the screen settings and get the handle to it.
 	mHWnd = CreateWindowEx(
 		WS_EX_APPWINDOW,
-		mWNDCaption,
-		mWNDCaption,
+		mWNDCaption.c_str(),
+		mWNDCaption.c_str(),
 		(WS_OVERLAPPED | WS_CAPTION),
 		posX,
 		posY,
@@ -160,16 +160,29 @@ void ApplicationClass::ShutdownWindows()
 	mHWnd = nullptr;
 
 	// Remove the application instance.
-	UnregisterClass(mWNDCaption, mHInst);
+	UnregisterClass(mWNDCaption.c_str(), mHInst);
 	mHInst = nullptr;
 
 	return;
 }
-
+#include "NTextured2DM.h"
 int ApplicationClass::Run()
 {
+	
+
+
+
+
 	MSG msg;
 	int result;
+
+	ModelClass* m = new NTextured2DM;
+
+	result = m->Init();
+	delete m;
+	if (result) return result;
+	
+
 
 	// Initialize the message structure.
 	ZeroMemory(&msg, sizeof(MSG));

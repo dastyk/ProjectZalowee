@@ -7,6 +7,9 @@
 //	Includes	//
 //////////////////
 #include <d3d11.h>
+#include <DirectXMath.h>
+
+using namespace DirectX;
 
 #pragma comment (lib, "d3d11.lib")
 
@@ -21,8 +24,11 @@ public:
 
 	int Init();
 	int StartRender();
-	int EndRender();
+	int DrawModel(XMMATRIX* translation, int model)const;
+	int EndRender()const;
 
+	ID3D11Device* GetDevice()const;
+	ID3D11DeviceContext* GetContext()const;
 private:
 	UINT m4xMsaaQuality; // Quality level of 4x MSAA
 	bool mEnable4xMsaa;

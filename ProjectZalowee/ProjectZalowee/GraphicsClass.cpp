@@ -105,7 +105,7 @@ int GraphicsClass::StartRender()
 	return 0;
 }
 
-int GraphicsClass::EndRender()
+int GraphicsClass::EndRender()const
 {
 	HRESULT hr;
 
@@ -119,6 +119,34 @@ int GraphicsClass::EndRender()
 
 	return 0;
 }
+
+
+int GraphicsClass::DrawModel(XMMATRIX* translation, int model)const
+{
+	return 0;
+}
+
+
+ID3D11Device* GraphicsClass::GetDevice()const
+{
+	return mDevice;
+}
+
+ID3D11DeviceContext* GraphicsClass::GetContext()const
+{
+	return mDeviceContext;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 int GraphicsClass::CreateDeviceDeviceContextSwapChain(ID3D11Device** ppDevice, ID3D11DeviceContext** ppDeviceContext, IDXGISwapChain** ppSwapChain, UINT flags)
 {

@@ -66,28 +66,52 @@
   <ItemGroup>
     <ClInclude Include="ApplicationClass.h" />
     <ClInclude Include="ApplicationState.h" />
+    <ClInclude Include="ColorShader.h" />
     <ClInclude Include="GraphicsClass.h" />
     <ClInclude Include="GraphicsObject.h" />
     <ClInclude Include="InputClass.h" />
     <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="MenuState.h" />
+    <ClInclude Include="Model2D.h" />
+    <ClInclude Include="ModelClass.h" />
+    <ClInclude Include="NTextured2DM.h" />
     <ClInclude Include="NullState.h" />
     <ClInclude Include="ResourceCreator.h" />
+    <ClInclude Include="ShaderClass.h" />
+    <ClInclude Include="Static2DM.h" />
     <ClInclude Include="SystemClass.h" />
     <ClInclude Include="TimerClass.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ApplicationClass.cpp" />
     <ClCompile Include="ApplicationState.cpp" />
+    <ClCompile Include="ColorShader.cpp" />
     <ClCompile Include="GraphicsClass.cpp" />
     <ClCompile Include="GraphicsObject.cpp" />
     <ClCompile Include="InputClass.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
     <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="Model2D.cpp" />
+    <ClCompile Include="ModelClass.cpp" />
+    <ClCompile Include="NTextured2DM.cpp" />
     <ClCompile Include="NullState.cpp" />
     <ClCompile Include="ResourceCreator.cpp" />
+    <ClCompile Include="ShaderClass.cpp" />
+    <ClCompile Include="Static2DM.cpp" />
     <ClCompile Include="SystemClass.cpp" />
     <ClCompile Include="TimerClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="data\shaders\ColorPixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PSMain</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="data\shaders\ColorVertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VSMain</EntryPointName>
+    </FxCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

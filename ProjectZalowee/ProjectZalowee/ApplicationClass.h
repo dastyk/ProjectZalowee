@@ -8,7 +8,9 @@
 //////////////////
 #include <Windows.h>
 #include <Windowsx.h>
+#include <string>
 
+using namespace std;
 //////////////////////////
 //	My Class Includes	//
 //////////////////////////
@@ -55,7 +57,7 @@ private:
 	int mScreenWidth;
 	int mScreenHeight;
 
-	LPCWSTR mWNDCaption;
+	wstring mWNDCaption;
 
 
 	TimerClass* mTimer;

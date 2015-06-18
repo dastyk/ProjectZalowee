@@ -49,6 +49,30 @@
     <Filter Include="Source Files\GraphicsObjects">
       <UniqueIdentifier>{0b7d2299-2236-4cdd-ab9d-6b81129aa6ca}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GraphicsClasses\ModelClasses">
+      <UniqueIdentifier>{770d95ca-c58f-45a7-8644-0f772e02b054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsClasses\ModelClasses">
+      <UniqueIdentifier>{35b547ba-04f7-479f-a157-13e200a39559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsClasses\ModelClasses\2DModel">
+      <UniqueIdentifier>{e77bb7a2-78bc-46e3-bde2-63431eb9347d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsClasses\ModelClasses\2DModel">
+      <UniqueIdentifier>{ba141ec0-3a58-4a01-8a5a-5fb0036de092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsClasses\ModelClasses\2DModel\Static2DM">
+      <UniqueIdentifier>{36e09cf0-48cb-4e3e-ae0c-6634d323b302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsClasses\ModelClasses\2DModel\Static2DM">
+      <UniqueIdentifier>{e1badaef-e6d4-4eaa-9150-c0a70d38afeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GraphicsClasses\ShaderClasses">
+      <UniqueIdentifier>{213be069-524c-4dc4-b7d9-5c40cc0d7f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GraphicsClasses\ShaderClasses">
+      <UniqueIdentifier>{a4b77dee-22e4-4faa-a371-2f9b2bb45580}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TimerClass.h">
@@ -83,6 +107,24 @@
     </ClInclude>
     <ClInclude Include="GraphicsObject.h">
       <Filter>Header Files\GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelClass.h">
+      <Filter>Header Files\GraphicsClasses\ModelClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Model2D.h">
+      <Filter>Header Files\GraphicsClasses\ModelClasses\2DModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Static2DM.h">
+      <Filter>Header Files\GraphicsClasses\ModelClasses\2DModel\Static2DM</Filter>
+    </ClInclude>
+    <ClInclude Include="NTextured2DM.h">
+      <Filter>Header Files\GraphicsClasses\ModelClasses\2DModel\Static2DM</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderClass.h">
+      <Filter>Header Files\GraphicsClasses\ShaderClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorShader.h">
+      <Filter>Header Files\GraphicsClasses\ShaderClasses</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -119,5 +161,31 @@
     <ClCompile Include="GraphicsObject.cpp">
       <Filter>Source Files\GraphicsObjects</Filter>
     </ClCompile>
+    <ClCompile Include="ModelClass.cpp">
+      <Filter>Source Files\GraphicsClasses\ModelClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="Model2D.cpp">
+      <Filter>Source Files\GraphicsClasses\ModelClasses\2DModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Static2DM.cpp">
+      <Filter>Source Files\GraphicsClasses\ModelClasses\2DModel\Static2DM</Filter>
+    </ClCompile>
+    <ClCompile Include="NTextured2DM.cpp">
+      <Filter>Source Files\GraphicsClasses\ModelClasses\2DModel\Static2DM</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderClass.cpp">
+      <Filter>Source Files\GraphicsClasses\ShaderClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorShader.cpp">
+      <Filter>Source Files\GraphicsClasses\ShaderClasses</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="data\shaders\ColorPixelShader.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="data\shaders\ColorVertexShader.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
