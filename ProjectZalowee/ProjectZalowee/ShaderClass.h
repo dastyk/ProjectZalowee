@@ -29,6 +29,7 @@ public:
 protected:
 	const void RenderShader(UINT indexCount, UINT indexStart) const;
 
+	int SetConstantBufferParameters(ID3D11Buffer* pBuffer, void* pData, size_t byteWidth);
 
 	void OutputShaderErrorMessage(ID3D10Blob*, WCHAR*);
 

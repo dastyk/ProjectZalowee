@@ -165,7 +165,6 @@ void ApplicationClass::ShutdownWindows()
 
 	return;
 }
-#include "NTextured2DM.h"
 int ApplicationClass::Run()
 {
 	
@@ -176,12 +175,17 @@ int ApplicationClass::Run()
 	MSG msg;
 	int result;
 
-	ModelClass* m = new NTextured2DM;
+	m = new NTextured2DM;
+	s = new ColorShader;
+
 
 	result = m->Init();
-	delete m;
+
 	if (result) return result;
 	
+	result = s->Init();
+
+	if (result) return result;
 
 
 	// Initialize the message structure.
@@ -211,7 +215,8 @@ int ApplicationClass::Run()
 
 
 	}
-
+	delete m;
+	delete s;
 	return result;
 }
 
@@ -256,7 +261,8 @@ int ApplicationClass::Update(float dt)
 int ApplicationClass::Render()
 {
 	SystemClass::GetInstance()->mGrapInst->StartRender();
-
+	m->SetAsModelToBeDrawn();
+	s->Render(&XMMatrixIdentity(), 0);
 
 	SystemClass::GetInstance()->mGrapInst->EndRender();
 	return 0;

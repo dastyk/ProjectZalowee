@@ -19,6 +19,7 @@ VS_OUT VSMain( VS_IN input)
 	VS_OUT output;
 
 	output.Pos = mul(float4(input.Pos, 0.0f, 1.0f), mTranslation);
+	//output.Pos = float4(input.Pos, 0.0f, 1.0f);
 	output.Color = mColor;
 	return output;
 }

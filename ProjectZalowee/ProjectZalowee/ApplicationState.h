@@ -5,15 +5,21 @@
 //////////////////
 //	Includes	//
 //////////////////
+#include <vector>
 
+using namespace std;
 //////////////////////////
 //	My Class Includes	//
 //////////////////////////
+#include "GraphicsObject.h"
+
 class ApplicationState
 {
 protected:
 	ApplicationState();
 	virtual ~ApplicationState();
+
+	vector<GraphicsObject*> mGraphicsObjects;
 
 public:
 

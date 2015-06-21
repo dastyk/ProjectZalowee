@@ -1,9 +1,3 @@
-
-cbuffer MatrixBuffer
-{
-	float4x4 mWorldViewProj;
-};
-
 struct VS_OUT
 {
 	float4 Pos : SV_POSITION;

@@ -68,6 +68,30 @@ const void ShaderClass::RenderShader(UINT indexCount, UINT indexStart)const
 	c->DrawIndexed(indexCount, indexStart, 0);
 }
 
+int ShaderClass::SetConstantBufferParameters(ID3D11Buffer* pBuffer, void* pData, size_t byteWidth)
+{
+	ID3D11DeviceContext* c = SystemClass::GetInstance()->mGrapInst->GetContext();
+
+	HRESULT result;
+	D3D11_MAPPED_SUBRESOURCE mappedResource;
+
+	// Lock the constant buffer so it can be written to.
+	result = c->Map(pBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
+	if (FAILED(result))
+	{
+		return -34;
+	}
+
+	// Copt the data to the constant buffer.
+	memcpy(mappedResource.pData, pData, byteWidth);
+
+	// Unlock the constant buffer.
+	c->Unmap(pBuffer, 0);
+
+
+	return 0;
+}
+
 void ShaderClass::OutputShaderErrorMessage(ID3D10Blob* errorMessage, WCHAR* shaderFilename)
 {
 	char* compileErrors;

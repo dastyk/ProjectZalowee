@@ -15,6 +15,8 @@ using namespace std;
 //	My Class Includes	//
 //////////////////////////
 #include "TimerClass.h"
+#include "NTextured2DM.h"
+#include "ColorShader.h"
 
 class ApplicationClass
 {
@@ -40,7 +42,8 @@ private:
 	int Render();
 
 	int InitializeWindows();
-	void ShutdownWindows();
+	void ShutdownWindows(); 
+		
 private:
 	HINSTANCE mHInst;
 	HWND mHWnd;
@@ -61,6 +64,10 @@ private:
 
 
 	TimerClass* mTimer;
+
+
+	ModelClass* m;
+	ShaderClass* s;
 };
 
 /////////////////////////

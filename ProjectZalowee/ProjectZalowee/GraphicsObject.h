@@ -14,6 +14,7 @@ protected:
 	GraphicsObject();
 	virtual ~GraphicsObject();
 
+public:
 	virtual int Update(float dt);
 	virtual int Render();
 	virtual void GetTranslation();
